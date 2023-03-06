@@ -1,0 +1,10 @@
+This code uses the MNIST dataset, which contains images of handwritten digits and their corresponding labels.
+The neural network is trained on this dataset to classify the images into their corresponding digits (0-9).
+
+The code first loads the dataset and normalizes the pixel values. 
+It then defines the neural network architecture, which consists of a flatten layer to convert the input images into a 1D array, 
+a dense layer with 128 neurons and ReLU activation function, and a dense output layer with 10 neurons and softmax activation function. 
+
+The model is compiled with the Adam optimizer and sparse categorical cross-entropy loss function.
+
+The model is then trained on the training data for 5 epochs. Finally, the model is evaluated on the test data, and the accuracy is printed out.
